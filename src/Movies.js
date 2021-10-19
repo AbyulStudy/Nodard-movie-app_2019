@@ -1,25 +1,32 @@
 import PropTypes from "prop-types";
 import "./Movie.css";
 
-function Movie({ year, title, summary, poster }) {
+function Movie({ year, title, summary, poster, genres }) {
   return (
-    <div className="moives__moive">
+    <div className="movie">
       <img src={poster} alt={title} title={title} />
       <div className="movie__data">
-        <h3 className="movie_-title" >{title}</h3>
+        <h3 className="movie_-title">{title}</h3>
         <h5 className="movie__year">{year}</h5>
-        <p className="movie__summary">{summary}</p>
+        <ul className="genres">
+          {genres.map((genre,index) => (
+            // map은 currenValue 과 index 를 반환해줌
+            <li key={index} className="genres__genre">{genre}</li>
+          ))}
+        </ul>
+        <p className="movie__summary">{summary.slice(0,180)} ...</p>
       </div>
     </div>
   );
 }
 
-Movie.porpTypes = {
+Movie.propTypes = {
   id: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Movie;
