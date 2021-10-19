@@ -23,7 +23,7 @@ class App extends React.Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <seciotn className="container">
+      <section className="container">
         {isLoading ? (
           <div className="loader">
             <span className="loader__text">"Loading...."</span>
@@ -38,11 +38,12 @@ class App extends React.Component {
                 title={movie.title}
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
+                genres={movie.genres}
               />
             ))}
           </div>
         )}
-      </seciotn>
+      </section>
     );
   }
 }
