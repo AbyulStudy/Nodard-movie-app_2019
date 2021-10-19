@@ -1,26 +1,25 @@
-// npm i porp-types
-import PropTypes from "prop-types";
+//npm i axios
+import axios from "axios";
 import React from "react";
 
-// class Style 
-class App extends React.Component{
+// class Style
+class App extends React.Component {
   state = {
-    count: 0
+    isLoading: true,
   };
-  add = () => { 
-    this.setState({count: this.state.count +1})
+
+  getMovies = async () => {
+    const {data: {data :{movies}}} = await axios.get("https://yts-proxy.now.sh/list_movies.json");
+    this.setState({ movies, isLoading: false });
   }
-  minus = () => {  
-    this.setState({count: this.state.count -1})
+
+  componentDidMount(){
+   this.getMovies();
   }
-  render(){
-    return (
-      <div>
-        <h1>The number is: {this.state.count}</h1>
-        <button onClick={this.add}>Add</button>
-        <button onClick={this.minus}>Minus</button>
-      </div>
-    )
+
+  render() {
+    const { isLoading } = this.state;
+    return <div>{isLoading ? "Loading...." : "We are ready"}</div>;
   }
 }
 
