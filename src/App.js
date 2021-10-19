@@ -1,11 +1,14 @@
 //npm i axios
 import axios from "axios";
 import React from "react";
+import Movies from "./Movies";
+import "./App.css";
 
 // class Style
 class App extends React.Component {
   state = {
     isLoading: true,
+    movies: []
   };
 
   getMovies = async () => {
@@ -18,8 +21,29 @@ class App extends React.Component {
   }
 
   render() {
-    const { isLoading } = this.state;
-    return <div>{isLoading ? "Loading...." : "We are ready"}</div>;
+    const { isLoading, movies } = this.state;
+    return (
+      <seciotn className="container">
+        {isLoading ? (
+          <div className="loader">
+            <span className="loader__text">"Loading...."</span>
+          </div>
+        ) : (
+          <div className="movies">
+            {movies.map((movie) => (
+              <Movies
+                key={movie.id}
+                id={movie.id}
+                year={movie.year}
+                title={movie.title}
+                summary={movie.summary}
+                poster={movie.medium_cover_image}
+              />
+            ))}
+          </div>
+        )}
+      </seciotn>
+    );
   }
 }
 
