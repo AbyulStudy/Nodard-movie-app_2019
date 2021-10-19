@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/nodard-movie-app_2019/static/css/main.8c76f207.chunk.css",
-    "main.js": "/nodard-movie-app_2019/static/js/main.c2a27a62.chunk.js",
-    "main.js.map": "/nodard-movie-app_2019/static/js/main.c2a27a62.chunk.js.map",
-    "runtime-main.js": "/nodard-movie-app_2019/static/js/runtime-main.e253cfa9.js",
-    "runtime-main.js.map": "/nodard-movie-app_2019/static/js/runtime-main.e253cfa9.js.map",
-    "static/js/2.be922deb.chunk.js": "/nodard-movie-app_2019/static/js/2.be922deb.chunk.js",
-    "static/js/2.be922deb.chunk.js.map": "/nodard-movie-app_2019/static/js/2.be922deb.chunk.js.map",
-    "index.html": "/nodard-movie-app_2019/index.html",
-    "static/css/main.8c76f207.chunk.css.map": "/nodard-movie-app_2019/static/css/main.8c76f207.chunk.css.map",
-    "static/js/2.be922deb.chunk.js.LICENSE.txt": "/nodard-movie-app_2019/static/js/2.be922deb.chunk.js.LICENSE.txt"
+    "main.css": "/nsodard-movie-app_2019/static/css/main.8c76f207.chunk.css",
+    "main.js": "/nsodard-movie-app_2019/static/js/main.c2a27a62.chunk.js",
+    "main.js.map": "/nsodard-movie-app_2019/static/js/main.c2a27a62.chunk.js.map",
+    "runtime-main.js": "/nsodard-movie-app_2019/static/js/runtime-main.d9b32115.js",
+    "runtime-main.js.map": "/nsodard-movie-app_2019/static/js/runtime-main.d9b32115.js.map",
+    "static/js/2.be922deb.chunk.js": "/nsodard-movie-app_2019/static/js/2.be922deb.chunk.js",
+    "static/js/2.be922deb.chunk.js.map": "/nsodard-movie-app_2019/static/js/2.be922deb.chunk.js.map",
+    "index.html": "/nsodard-movie-app_2019/index.html",
+    "static/css/main.8c76f207.chunk.css.map": "/nsodard-movie-app_2019/static/css/main.8c76f207.chunk.css.map",
+    "static/js/2.be922deb.chunk.js.LICENSE.txt": "/nsodard-movie-app_2019/static/js/2.be922deb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e253cfa9.js",
+    "static/js/runtime-main.d9b32115.js",
     "static/js/2.be922deb.chunk.js",
     "static/css/main.8c76f207.chunk.css",
     "static/js/main.c2a27a62.chunk.js"
